@@ -11,25 +11,51 @@ import "../styles/global.css";
 
 <body>
 <div class="header">
-    <h1>aimée concannon</h1>
+    <div class="header-name">
+        <h1>aimée concannon</h1>
+    </div>
+    <div class="header-dark-mode-toggle">
+        <button id="themeToggle" class="toggle">
+            <span class="toggle-thumb"></span>
+        </button>
+    </div>
 </div>
 
 <main>
     <h1>hi, i'm aimée</h1>
-    <p>i like computers</p> <br>
-    <p>
-        bai mech eng <br>
-        ↓ <br>
-        mai biomed eng <br>
-        ↓ <br>
-        sofware eng <br>
+    <p>i like computers</p>
+
+    <h2>then</h2>
+    <div class="journey">
+        @<a href="http://tcd.ie/">tcd</a><br><br>
+        <div class="journey-item">bai mech eng</div>
+        <div class="journey-item">mai biomed eng</div>
+        <div class="journey-item">software eng</div>
+    </div>
+
+    <h2>now</h2>
+    <p class="work">
+        living every little girls dream, building financial infrastructure for the internet:
     </p>
-    <p>
-        <br>
-        <br>
-        then: stripe <br>
-        now: apata <br>
+    <p class="work-details">
+        3y @<a href="https://stripe.com/">stripe</a><br>
+        2y+ @<a href="https://apata.com/">apata</a>
+    </p>
+
+    <h2>say hi back</h2>
+    <p class="links">
+        <a href="https://www.linkedin.com/in/aimeeconcannon/">linkedin</a>
     </p>
 </main>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const root = document.documentElement;
+
+        document.getElementById("themeToggle").onclick = () => {
+            root.classList.toggle("dark");
+        };
+    });
+</script>
 </body>
 </html>

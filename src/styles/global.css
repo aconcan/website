@@ -1,20 +1,113 @@
 html {
     font-family: system-ui, sans-serif;
     font-size: 15px;
+    font-weight: 250;
 }
 
 h1 {
     font-size: 25px;
+    font-weight: 450;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
 }
 
 .header {
-    padding: 0 20px;
-    font-weight: 600;
+    font-weight: 450;
     font-size: 18px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-name {
+    padding: 0 20px;
+}
+
+.header-dark-mode-toggle {
+    padding-right: 20px;
+}
+
+.toggle {
+    width: 44px;
+    height: 24px;
+    border-radius: 999px;
+    border: 1px solid var(--text);
+    background: var(--toggle-bg);
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--toggle-thumb);
+    position: absolute;
+    left: 3px;
+    transition: transform 0.2s ease;
+}
+
+.dark .toggle-thumb {
+    transform: translateX(20px);
 }
 
 main {
-    max-width: 300px;
+    max-width: 500px;
     margin: 40px auto;
-    padding: 0 20px;
+}
+
+.journey-item {
+    margin-left: 200px;
+}
+
+.journey-item {
+    position: relative;
+}
+
+.journey-item::after {
+    content: "↓";
+    display: block;
+    opacity: 0.3;
+    margin-left: 40px;
+}
+
+.journey-item:last-child::after {
+    content: "";
+}
+
+.work {
+    margin-top: 20px;
+}
+
+.work-details {
+    margin-bottom: 40px;
+}
+
+.links {
+}
+
+:root {
+    --bg: white;
+    --text: black;
+    --toggle-bg: #e5e5e5;
+    --toggle-thumb: black;
+}
+
+.dark {
+    --bg: #111;
+    --text: #eee;
+    --toggle-bg: #333;
+    --toggle-thumb: white;
 }

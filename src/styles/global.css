@@ -1,0 +1,20 @@
+html {
+    font-family: system-ui, sans-serif;
+    font-size: 15px;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+.header {
+    padding: 0 20px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+main {
+    max-width: 300px;
+    margin: 40px auto;
+    padding: 0 20px;
+}

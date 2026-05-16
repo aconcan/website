@@ -68,17 +68,19 @@ main {
     margin: 40px auto;
     padding: 0 44px;
 }
+.journey {
+    width: fit-content;
+    margin: 0 auto;
+}
 
 .journey-item {
-    margin-left: 200px;
-    position: relative;
+    text-align: center;
 }
 
 .journey-item::after {
     content: "↓";
     display: block;
     opacity: 0.3;
-    margin-left: 40px;
 }
 
 .journey-item:last-child::after {

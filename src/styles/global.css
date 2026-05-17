@@ -111,3 +111,7 @@ main {
     --toggle-bg: #333;
     --toggle-thumb: white;
 }
+
+.dark a {
+    color: #FFFF00;
+}

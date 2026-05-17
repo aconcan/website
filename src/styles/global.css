@@ -68,6 +68,14 @@ main {
     margin: 40px auto;
     padding: 0 44px;
 }
+
+.profile-image {
+    width: 300px;
+    border-radius: 16px;
+    display: block;
+    margin: 24px auto;
+}
+
 .journey {
     width: fit-content;
     margin: 0 auto;

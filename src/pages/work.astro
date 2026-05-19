@@ -9,8 +9,10 @@ import Layout from "../layouts/Layout.astro";
     <details class="work-item">
         <summary><span class="marker">▸</span> 3DS Server Runtime</summary>
         <p>
-            As a team of two designed and implemented a 3DS Server runtime in Kotlin, capable of passing FIME certification test suites across all current 3DS protocol versions.
-            Translated EMVCo specifications into executable authentication flows under strict certification constraints and compressed delivery timelines.
+            Designed and implemented a 3DS Server runtime in Kotlin, capable of passing FIME certification test suites across all current 3DS protocol versions.
+        </p>
+        <p>
+            Translated EMVCo specifications into executable authentication flows fully compliant with certification constraints, under an extremely compressed delivery timeline.
         </p>
 
         <ul>
@@ -23,9 +25,10 @@ import Layout from "../layouts/Layout.astro";
     <details class="work-item">
         <summary><span class="marker">▸</span> Async Job Worker Pool</summary>
         <p>
-            Implemented a distributed job execution service for handling asynchronous workloads. Designed the service to function as
-            a general purpose pool of compute for all async application jobs across the application, with controlled concurrency and isolated processing.
-            This enabled scalable compute for batch processing and long-running background jobs.
+            Architected and implemented a distributed job execution service, that unified asynchronous workloads into a shared compute pool across the application.
+        </p>
+        <p>
+            This standardised async job execution across services, removing the need for custom service infrastructure, improving reliability, and enabling the addition of autoscaling policies for background jobs.
         </p>
 
         <ul>
@@ -37,16 +40,17 @@ import Layout from "../layouts/Layout.astro";
     </details>
 
     <details class="work-item">
-        <summary><span class="marker">▸</span> Core AWS SDK Migration</summary>
+        <summary><span class="marker">▸</span> Production AWS SDK Migration</summary>
         <p>
-            Migrated core infrastructure from AWS SDK v2 to v3 across heavily used services, including S3 integrations forming a significant portion of system dependencies.
-            Refactored client injection patterns and introduced safe rollout mechanisms to eliminate legacy security vulnerabilities.
+            Migrated core application infrastructure from AWS SDK v2 to v3 across heavily used services, including S3 integrations forming a significant portion of system dependencies.<br><br>
+            Refactored client injection patterns and introduced safe rollout mechanisms to eliminate legacy security vulnerabilities.<br><br>
+            Successfully migrated the system in production with zero issues.
         </p>
 
         <ul>
-            <li>TypeScript</li>
-            <li>AWS SDK</li>
-            <li>S3</li>
+            <li>TypeScript, Inversify</li>
+            <li>Design Patterns</li>
+            <li>AWS S3</li>
             <li>Feature Flags</li>
         </ul>
     </details>
@@ -54,7 +58,7 @@ import Layout from "../layouts/Layout.astro";
     <details class="work-item">
         <summary><span class="marker">▸</span> Accessibility Audit CLI</summary>
         <p>
-            Built an automated CLI for WCAG 2.1 accessibility validation across large sets of HTML templates using automated rule-based analysis.
+            Built a CLI tool for automated WCAG 2.1 accessibility validation across large sets of HTML templates using automated rule-based analysis.<br><br>
             Enabled batch auditing, CI integration, and structured reporting for large-scale remediation of accessibility issues.
         </p>
 
@@ -69,15 +73,15 @@ import Layout from "../layouts/Layout.astro";
     <details class="work-item">
         <summary><span class="marker">▸</span> Analytics Platform Expansion</summary>
         <p>
-            Delivered multi-tab analytics interfaces providing structured visibility into transaction, integration, and third-party processing data.
-            Implemented backend and frontend components under shifting requirements while maintaining delivery continuity across multiple workstreams.
+            Delivered multi-tab analytics interfaces exposing structured visibility into transaction, integration, and third-party processing data across core system workflows.<br><br>
+            Implemented a custom event emission to stream application and system metrics into OpenSearch, enabling consistent observability across services.<br><br>
+            Built query-backed analytics surfaces over OpenSearch, supporting both time-series and tabular aggregation models consumed directly by the client-side dashboard UI.<br><br>
+            This enabled unified real-time and historical analytics on a single OpenSearch-backed event pipeline powering dashboard queries.
         </p>
 
         <ul>
-            <li>TypeScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>PostgreSQL</li>
+            <li>Opensearch</li>
+            <li>Typescript, Node.js</li>
         </ul>
     </details>
     <br>

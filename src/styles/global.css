@@ -123,3 +123,49 @@ main {
 .dark a {
     color: #FFFF00;
 }
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: blue
+}
+
+.work-item {
+    margin: 20px 0;
+}
+
+.work-item summary {
+    font-weight: 420;
+    list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+.work-item p,
+.work-item ul {
+    margin-top: 10px;
+}
+.work-item li {
+    font-weight: 12;
+}
+
+details[open] .marker {
+    display: inline-block;
+    transform: rotate(90deg);
+}
+
+.marker {
+    color: blue;
+}
+
+.dark .marker {
+    color: #FFFF00;
+}

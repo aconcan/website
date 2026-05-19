@@ -1,0 +1,86 @@
+---
+import "../styles/global.css";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+    <h1>2026</h1>
+    (@apata)
+    <details class="work-item">
+        <summary><span class="marker">▸</span> 3DS Server Runtime</summary>
+        <p>
+            As a team of two designed and implemented a 3DS Server runtime in Kotlin, capable of passing FIME certification test suites across all current 3DS protocol versions.
+            Translated EMVCo specifications into executable authentication flows under strict certification constraints and compressed delivery timelines.
+        </p>
+
+        <ul>
+            <li>Kotlin</li>
+            <li>Spring Boot</li>
+            <li>Postgres, jOOQ, Flyway</li>
+        </ul>
+    </details>
+
+    <details class="work-item">
+        <summary><span class="marker">▸</span> Async Job Worker Pool</summary>
+        <p>
+            Implemented a distributed job execution service for handling asynchronous workloads. Designed the service to function as
+            a general purpose pool of compute for all async application jobs across the application, with controlled concurrency and isolated processing.
+            This enabled scalable compute for batch processing and long-running background jobs.
+        </p>
+
+        <ul>
+            <li>Typescript, Node.js</li>
+            <li>AWS (ECS, SQS)</li>
+            <li>Terraform</li>
+            <li>Redis</li>
+        </ul>
+    </details>
+
+    <details class="work-item">
+        <summary><span class="marker">▸</span> Core AWS SDK Migration</summary>
+        <p>
+            Migrated core infrastructure from AWS SDK v2 to v3 across heavily used services, including S3 integrations forming a significant portion of system dependencies.
+            Refactored client injection patterns and introduced safe rollout mechanisms to eliminate legacy security vulnerabilities.
+        </p>
+
+        <ul>
+            <li>TypeScript</li>
+            <li>AWS SDK</li>
+            <li>S3</li>
+            <li>Feature Flags</li>
+        </ul>
+    </details>
+
+    <details class="work-item">
+        <summary><span class="marker">▸</span> Accessibility Audit CLI</summary>
+        <p>
+            Built an automated CLI for WCAG 2.1 accessibility validation across large sets of HTML templates using automated rule-based analysis.
+            Enabled batch auditing, CI integration, and structured reporting for large-scale remediation of accessibility issues.
+        </p>
+
+        <ul>
+            <li>Node.js</li>
+            <li>axe-core</li>
+            <li>CI/CD</li>
+            <li>HTML</li>
+        </ul>
+    </details>
+
+    <details class="work-item">
+        <summary><span class="marker">▸</span> Analytics Platform Expansion</summary>
+        <p>
+            Delivered multi-tab analytics interfaces providing structured visibility into transaction, integration, and third-party processing data.
+            Implemented backend and frontend components under shifting requirements while maintaining delivery continuity across multiple workstreams.
+        </p>
+
+        <ul>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>PostgreSQL</li>
+        </ul>
+    </details>
+    <br>
+
+    <h1>2025</h1>
+</Layout>

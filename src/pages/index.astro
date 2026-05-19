@@ -1,67 +1,16 @@
 ---
+import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
 ---
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="/circle.svg" type="image/svg+xml">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>aconcan</title>
-</head>
-
-<body>
-<div class="header">
-    <div class="header-name">
-        <h1>aimée concannon</h1>
-    </div>
-    <div class="header-dark-mode-toggle">
-        <button id="themeToggle" class="toggle">
-            <span class="toggle-thumb"></span>
-        </button>
-    </div>
-</div>
-
-<main>
-    <img src="/dell.png" alt="me" class="profile-image"><br>
+<Layout>
     <h1>hi, i'm aimée</h1>
-
     <p>i like computers</p>
+    <img src="/dell.png" alt="me" class="profile-image">
 
-
-
-    <h2>then</h2>
-    @<a href="http://tcd.ie/">tcd</a><br><br>
-    <div class="journey">
-        <div class="journey-item">bai mech eng</div>
-        <div class="journey-item">mai biomed eng</div>
+    <div class="nav-links">
+        <a href="/about">about</a>
+        <a href="/work">recent work</a>
+        <a href="/contact">contact</a>
     </div>
-
-    <h2>now</h2>
-    <p>software engineer</p>
-    <p class="work">
-        living every little girls dream; building financial infrastructure for the internet
-    </p>
-    <p class="work-details">
-        3y @<a href="https://stripe.com/">stripe</a><br>
-        2y+ @<a href="https://apata.com/">apata</a>
-    </p>
-
-    <h2>say hi back</h2>
-    <p class="links">
-        <a href="https://github.com/aconcan">github</a><br>
-        <a href="https://www.linkedin.com/in/aimeeconcannon/">linkedin</a>
-    </p>
-</main>
-
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const root = document.documentElement;
-
-        document.getElementById("themeToggle").onclick = () => {
-            root.classList.toggle("dark");
-        };
-    });
-</script>
-</body>
-</html>
+</Layout>

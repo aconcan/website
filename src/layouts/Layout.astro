@@ -1,0 +1,39 @@
+---
+import "../styles/global.css";
+---
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/circle.svg" type="image/svg+xml">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aconcan</title>
+</head>
+
+<body>
+<div class="header">
+    <div class="header-name">
+        <h1>aimée concannon</h1>
+    </div>
+    <div class="header-dark-mode-toggle">
+        <button id="themeToggle" class="toggle">
+            <span class="toggle-thumb"></span>
+        </button>
+    </div>
+</div>
+
+<main>
+    <slot />
+</main>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const root = document.documentElement;
+
+        document.getElementById("themeToggle").onclick = () => {
+            root.classList.toggle("dark");
+        };
+    });
+</script>
+</body>
+</html>

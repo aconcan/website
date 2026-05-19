@@ -136,6 +136,11 @@ main {
     color: blue
 }
 
+.dark .nav-links a {
+    text-decoration: none;
+    color: #FFFF00
+}
+
 .work-item {
     margin: 20px 0;
 }
